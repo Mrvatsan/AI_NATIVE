@@ -1,0 +1,110 @@
+[
+  {
+    "prompt": "Build a CRM for a real estate agency.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 4524,
+    "estimatedCost": 0.000023650000000000002
+  },
+  {
+    "prompt": "Task manager for a remote team.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 3009,
+    "estimatedCost": 0.000022270000000000002
+  },
+  {
+    "prompt": "Inventory management system for a retail store.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 3119,
+    "estimatedCost": 0.0000188
+  },
+  {
+    "prompt": "HR Tool for tracking employee leaves and performance.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 2970,
+    "estimatedCost": 0.000018690000000000002
+  },
+  {
+    "prompt": "E-commerce platform for selling digital goods.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 2534,
+    "estimatedCost": 0.00001816
+  },
+  {
+    "prompt": "Event Platform for selling tickets to local concerts.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 2738,
+    "estimatedCost": 0.00002053
+  },
+  {
+    "prompt": "Project Tracker with client portals.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 3167,
+    "estimatedCost": 0.00001846
+  },
+  {
+    "prompt": "An app.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 2789,
+    "estimatedCost": 0.000017990000000000002
+  },
+  {
+    "prompt": "Build something like Notion for doctors.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 2740,
+    "estimatedCost": 0.00002496
+  },
+  {
+    "prompt": "Task manager, but make it smart.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 3133,
+    "estimatedCost": 0.00002296
+  },
+  {
+    "prompt": "CRM but also a project manager but also an invoicing tool.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 2789,
+    "estimatedCost": 0.000019050000000000002
+  },
+  {
+    "prompt": "Overscoped marketplace prompt for buying and selling yachts with integrated crypto payments, AR viewing, and AI matchmaking.",
+    "success": false,
+    "failedStage": "SchemaGeneration",
+    "repairStrategy": null,
+    "retryCount": 0,
+    "latencyMs": 2724,
+    "estimatedCost": 0.00002432
+  }
+]
