@@ -41,7 +41,7 @@ describe('Evaluation Suite', () => {
       let intentResult;
       try {
         const extractor = new IntentExtractor(gateway);
-        intentResult = await extractor.extract(prompt, { provider: 'groq', model: 'llama-3.1-8b-instant', jobId, stageName: 'intentExtraction' });
+        intentResult = await extractor.extract(prompt, { provider: 'groq', model: 'llama-3.3-70b-versatile', jobId, stageName: 'intentExtraction' });
         if (!intentResult.success) failedStage = 'IntentExtraction';
       } catch (e) {
         failedStage = 'IntentExtraction';
@@ -51,7 +51,7 @@ describe('Evaluation Suite', () => {
       if (!failedStage && intentResult?.intent) {
         try {
           const schemaGen = new SchemaGenerator(gateway);
-          schemaResult = await schemaGen.generate(intentResult.intent, { provider: 'gemini', model: 'gemini-1.5-flash', jobId, stageName: 'schemaGeneration' });
+          schemaResult = await schemaGen.generate(intentResult.intent, { provider: 'groq', model: 'llama-3.3-70b-versatile', jobId, stageName: 'schemaGeneration' });
           if (!schemaResult.success) failedStage = 'SchemaGeneration';
         } catch (e) {
           failedStage = 'SchemaGeneration';
@@ -66,7 +66,7 @@ describe('Evaluation Suite', () => {
             schemaResult.schema,
             intentResult.intent.integrations_requested || [],
             intentResult.intent.features || [],
-            { provider: 'openai', model: 'gpt-4o-mini', jobId, stageName: 'appSpecGeneration' }
+            { provider: 'groq', model: 'llama-3.3-70b-versatile', jobId, stageName: 'appSpecGeneration' }
           );
           if (!specResult.success) failedStage = 'AppSpecGeneration';
         } catch (e) {

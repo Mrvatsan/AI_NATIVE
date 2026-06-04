@@ -2,29 +2,29 @@
   {
     "prompt": "Build a CRM for a real estate agency.",
     "success": false,
-    "failedStage": "SchemaGeneration",
+    "failedStage": "AppSpecGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 4524,
-    "estimatedCost": 0.000023650000000000002
+    "latencyMs": 10874,
+    "estimatedCost": 0.0005451400000000001
   },
   {
     "prompt": "Task manager for a remote team.",
     "success": false,
-    "failedStage": "SchemaGeneration",
+    "failedStage": "AppSpecGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 3009,
-    "estimatedCost": 0.000022270000000000002
+    "latencyMs": 43764,
+    "estimatedCost": 0.001092965
   },
   {
     "prompt": "Inventory management system for a retail store.",
     "success": false,
-    "failedStage": "SchemaGeneration",
+    "failedStage": "AppSpecGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 3119,
-    "estimatedCost": 0.0000188
+    "latencyMs": 3986,
+    "estimatedCost": 0.00011876999999999999
   },
   {
     "prompt": "HR Tool for tracking employee leaves and performance.",
@@ -32,7 +32,7 @@
     "failedStage": "SchemaGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 2970,
+    "latencyMs": 955,
     "estimatedCost": 0.000018690000000000002
   },
   {
@@ -41,7 +41,7 @@
     "failedStage": "SchemaGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 2534,
+    "latencyMs": 1476,
     "estimatedCost": 0.00001816
   },
   {
@@ -50,7 +50,7 @@
     "failedStage": "SchemaGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 2738,
+    "latencyMs": 1410,
     "estimatedCost": 0.00002053
   },
   {
@@ -59,7 +59,7 @@
     "failedStage": "SchemaGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 3167,
+    "latencyMs": 1217,
     "estimatedCost": 0.00001846
   },
   {
@@ -68,7 +68,7 @@
     "failedStage": "SchemaGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 2789,
+    "latencyMs": 1061,
     "estimatedCost": 0.000017990000000000002
   },
   {
@@ -77,7 +77,7 @@
     "failedStage": "SchemaGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 2740,
+    "latencyMs": 2102,
     "estimatedCost": 0.00002496
   },
   {
@@ -86,7 +86,7 @@
     "failedStage": "SchemaGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 3133,
+    "latencyMs": 1216,
     "estimatedCost": 0.00002296
   },
   {
@@ -95,7 +95,7 @@
     "failedStage": "SchemaGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 2789,
+    "latencyMs": 959,
     "estimatedCost": 0.000019050000000000002
   },
   {
@@ -104,7 +104,7 @@
     "failedStage": "SchemaGeneration",
     "repairStrategy": null,
     "retryCount": 0,
-    "latencyMs": 2724,
+    "latencyMs": 1134,
     "estimatedCost": 0.00002432
   }
 ]

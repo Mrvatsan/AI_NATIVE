@@ -31,6 +31,8 @@ const STAGE_COST_KEYS: Record<string, string> = {
   'AppSpecGeneration': 'appSpecGeneration'
 };
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+
 function App() {
   const [prompt, setPrompt] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
@@ -51,7 +53,7 @@ function App() {
   const [elapsedTime, setElapsedTime] = useState(0);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/integrations')
+    fetch(`${API_URL}/api/integrations`)
       .then(res => res.json())
       .then(data => setIntegrations(data))
       .catch(console.error);
@@ -73,7 +75,7 @@ function App() {
   useEffect(() => {
     if (!jobId) return;
 
-    const sse = new EventSource(`http://localhost:3000/api/generate/${jobId}/stream`);
+    const sse = new EventSource(`${API_URL}/api/generate/${jobId}/stream`);
     
     sse.onmessage = (e) => {
       const data = JSON.parse(e.data);
@@ -85,7 +87,7 @@ function App() {
         sse.close();
         
         // Fetch cost
-        fetch(`http://localhost:3000/api/generate/${jobId}`)
+        fetch(`${API_URL}/api/generate/${jobId}`)
           .then(res => res.json())
           .then(data => setCostBreakdown(data.costBreakdown))
           .catch(console.error);
@@ -104,7 +106,7 @@ function App() {
     setAppSpec(null);
     setCostBreakdown(null);
     try {
-      const res = await fetch('http://localhost:3000/api/generate', {
+      const res = await fetch(`${API_URL}/api/generate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt })
