@@ -1,17 +1,17 @@
 {
   "intentExtraction": {
     "primary": "groq",
-    "fallback": "gemini",
+    "fallback": "openai",
     "model": "llama-3.1-8b-instant"
   },
   "schemaGeneration": {
-    "primary": "groq",
+    "primary": "openai",
     "fallback": "gemini",
-    "model": "llama-3.3-70b-versatile"
+    "model": "gpt-4o-mini"
   },
   "appSpecGeneration": {
-    "primary": "groq",
+    "primary": "openai",
     "fallback": "gemini",
-    "model": "llama-3.3-70b-versatile"
+    "model": "gpt-4o-mini"
   }
 }
